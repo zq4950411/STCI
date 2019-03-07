@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('CheckOut') {
         environment {
-            username:password = crea('c65fcf11-b58c-46a3-b7bd-1464feefe5f7')
+            username:password = credentials('c65fcf11-b58c-46a3-b7bd-1464feefe5f7')
         }
         steps {
             sh 'printenv'
