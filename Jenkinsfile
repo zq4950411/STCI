@@ -7,6 +7,8 @@ pipeline {
         }
         steps {
             sh 'printenv'
+            sh '${password_USR}'
+            sh '${password_PSW}'
             sh 'svn://47.96.1.255/ppgame/app/STApp/iOS/ShuTiao/trunk --username zhaiqiang --password nacaizq'
         }
     }
